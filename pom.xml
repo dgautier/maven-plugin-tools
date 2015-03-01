@@ -2,16 +2,56 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
     <groupId>com.github.dgautier</groupId>
     <artifactId>maven-plugin-tools</artifactId>
-    <version>0.0</version>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>maven-plugin</packaging>
+
+
+
+    <name>Remote File Copy Maven plugin utilities</name>
+    <description>A maven plugin copying file to a target host throw SSH connection</description>
+    <url>https://github.com/dgautier/icn-tools</url>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>David Gautier</name>
+            <organization>Ginko</organization>
+            <email>david.gautier@ginko.io</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com/dgautier/maven-plugin-tools.git</developerConnection>
+        <connection>scm:git:git@github.com/dgautier/maven-plugin-tools.git</connection>
+        <url>git@github.com/dgautier/maven-plugin-tools</url>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/dgautier/maven-plugin-tools/issues</url>
+    </issueManagement>
+
 
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
-
-    <packaging>maven-plugin</packaging>
-    <name>Maven Plugin Tools</name>
 
     <dependencies>
         <!-- maven plugin dependencies -->
