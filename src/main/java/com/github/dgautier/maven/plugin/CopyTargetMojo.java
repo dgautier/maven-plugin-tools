@@ -81,7 +81,7 @@ public class CopyTargetMojo extends AbstractRemoteMojo {
     }
 
 
-    private File getTargetFile() {
+    protected File getTargetFile() {
         return new File(this.outputDirectory, this.finalName + "."
                 + this.project.getPackaging());
     }
