@@ -63,7 +63,7 @@ public class CopyTargetMojo extends AbstractRemoteMojo {
         super.execute();
 
         if (this.project.getPackaging().equals("pom")) {
-            getLog().debug("repackage goal could not be applied to pom project.");
+            getLog().debug("deployFile goal could not be applied to pom project.");
             return;
         }
     }
